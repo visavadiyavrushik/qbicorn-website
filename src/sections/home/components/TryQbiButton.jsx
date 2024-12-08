@@ -9,7 +9,7 @@ export default function TryQbiButton() {
         onClick={() =>
           window.open('https://app.qbicorn.me', '_blank', 'noopener,noreferrer')
         }
-        className="text-[21px]"
+        className="text-base 2xl:text-[21px]"
       >
         Try Qbicorn Free
       </CommonButton>

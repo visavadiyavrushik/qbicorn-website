@@ -19,6 +19,10 @@ module.exports = {
         eerieBlack: '#1C1C1C',
       },
     },
+    container: {
+      center: true,
+      // padding:"5rem"
+    },
   },
   plugins: [],
 };

@@ -36,7 +36,7 @@ const features = [
 const HomeAINote = () => {
   return (
     <section className="mt-[80px] md:mt-[130px]">
-      <div className="container mx-auto flex justify-center flex-col items-center text-center relative px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto flex justify-center flex-col items-center text-center relative px-4 xl:px-16 lg:px-8">
         {/* Capsule and Title Section */}
         <div className="bg-ellipse"></div>
         <InsightCapsule iconSrc="/assets/svg/benifits.svg" text="Benefits" />
@@ -47,7 +47,7 @@ const HomeAINote = () => {
       </div>
 
       {/* Features Grid */}
-      <div className="container mx-auto grid grid-cols-1  lg:grid-cols-2 gap-8 mt-12 px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto grid grid-cols-1  lg:grid-cols-2 gap-8 mt-12 px-5 xl:px-16">
         {features.map((feature, index) => (
           <NoteTakerHighlightCard
             key={index}

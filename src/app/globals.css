@@ -141,7 +141,7 @@ html.dark {
   z-index: -1; /* Ensure it stays behind the content */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .blurred-decorator,
   .blurred-circle,
   .blurred-decorator-right,

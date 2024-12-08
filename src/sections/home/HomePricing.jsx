@@ -53,7 +53,7 @@ const plans = [
 const HomePricing = () => {
   return (
     <>
-      <section className="mt-[80px] md:mt-[130px] relative" id="pricing">
+      <section className="mt-[80px] md:mt-[130px] relative px-5 lg:px-0" id="pricing">
         <div className="rotated-shadow-left"></div>
         <div className="container mx-auto flex justify-center flex-col items-center text-center relative">
           <InsightCapsule
