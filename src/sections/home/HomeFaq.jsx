@@ -35,8 +35,8 @@ const accordionItems = [
 const HomeFaq = () => {
   return (
     <>
-      <section className="mt-[80px] md:mt-[130px] px-5 lg:px-0">
-        <div className="container mx-auto flex justify-center flex-col items-center text-center relative">
+      <section className="mt-[80px] md:mt-[130px] ">
+        <div className="container mx-auto flex justify-center flex-col items-center text-center relative px-5  xl:px-16">
           <InsightCapsule
             iconSrc="/assets/svg/quistioncircle.svg"
             text="FAQ’s"

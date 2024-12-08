@@ -5,7 +5,7 @@ import React from 'react';
 const HomeEmpower = () => {
   return (
     <section className="mt-[80px] md:mt-[130px] ">
-      <div className="container mx-auto px-5 lg:px-0 relative">
+      <div className="container mx-auto px-5  xl:px-16 relative">
         <div className="circle-shadow-left-bottom"></div>
         <div className="circle-shadow-right-middle"></div>
         <div

@@ -7,7 +7,7 @@ const HomeAIVideo = () => {
   return (
     <>
       <section className="mt-[80px] md:mt-[130px]" id="how-it-works">
-        <div className="container mx-auto flex justify-center flex-col items-center text-center relative">
+        <div className="container mx-auto flex justify-center flex-col items-center text-center relative px-5  xl:px-16">
           <InsightCapsule iconSrc="/assets/svg/flag.svg" text="Learn To Use" />
           <SectionTitle
             title="Learn more about AI Note Taker in this video"
@@ -16,7 +16,7 @@ const HomeAIVideo = () => {
             subTitleWidth={'992'}
           />
         </div>
-        <div className="container mx-auto mt-24">
+        <div className="container mx-auto mt-24 px-5  xl:px-16">
           <Image
             src="/assets/images/Link.png"
             alt="meeting Video"

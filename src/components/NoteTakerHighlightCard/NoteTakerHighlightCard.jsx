@@ -12,7 +12,7 @@ const NoteTakerHighlightCard = ({
 }) => {
   return (
     <div
-      className={`flex flex-col sm:flex-row items-start ${cardBg} px-6 sm:px-8 py-6 sm:py-8 border-eerieBlack rounded-[20px]`}
+      className={`flex flex-col sm:flex-row items-start ${cardBg} p-3 md:p-4 xl:p-6 2xl:p-8 border-eerieBlack rounded-[20px]`}
       {...props}
     >
       {/* Icon Section */}
@@ -24,11 +24,11 @@ const NoteTakerHighlightCard = ({
 
       {/* Content Section */}
       <div>
-        <h5 className="font-semibold text-lg sm:text-xl lg:text-2xl mt-2">
+        <h5 className="font-semibold text-base lg:text-lg  xl:text-xl 2xl:text-2xl mt-2">
           {title}
         </h5>
         <p
-          className={`${textColor} text-sm sm:text-base lg:text-lg font-normal mt-4`}
+          className={`${textColor} text-sm sm:text-sm lg:text-base xl:text-base  font-normal mt-2 xl:mt-4`}
         >
           {description}
         </p>

@@ -30,15 +30,13 @@ const Header = () => {
 
   return (
     <header
-      className={`bg-white text-black shadow-lg fixed top-4 left-0 right-0 z-20 mx-auto w-[95%] sm:w-[90%] lg:max-w-6xl rounded-3xl transition-transform duration-300 backdrop-blur-lg ${
-        isHeaderVisible ? 'translate-y-0' : '-translate-y-full'
+      className={`bg-white text-black shadow-lg fixed top-4 left-0 right-0 z-20 mx-auto w-[95%] sm:w-[90%] md:max-w-3xl lg:max-w-2xl xl:max-w-2xl 2xl:max-w-4xl rounded-3xl transition-transform duration-300 backdrop-blur-lg ${
+        isHeaderVisible ? 'translate-y-0' : '-translate-y-24'
       }`}
     >
-      <nav
-        className="grid grid-cols-2 md:grid-cols-3 items-center p-3 sm:p-3 sm:px-4"
-        // style={{ gridTemplateColumns: "1fr auto 1fr" }}
-      >
-        <div className="hidden md:flex justify-start space-x-5 text-sm sm:text-lg">
+      <nav className="grid grid-cols-2 md:grid-cols-[1fr_auto_1fr] items-center px-3 py-3 sm:py-3 md:py-2 2xl:py-3 sm:px-4">
+        {/* Left Links */}
+        <div className="hidden md:flex justify-start space-x-5 text-sm md:text-base 2xl:text-lg">
           <Link href="#features" className="hover:text-primary">
             Features
           </Link>
@@ -58,12 +56,13 @@ const Header = () => {
               alt="Logo"
               width={60}
               height={60}
-              className="cursor-pointer max-h-[40px] md:max-h-[60px]"
+              className="cursor-pointer max-h-[40px] h-full lg:max-h-[40px] xl:max-h-[60px] max-w-[40px] w-full lg:max-w-[40px] xl:max-w-[60px]"
             />
           </Link>
         </div>
 
-        <div className="hidden md:flex justify-end space-x-6 items-center text-sm sm:text-lg">
+        {/* Right Links */}
+        <div className="hidden md:flex justify-end space-x-6 items-center text-sm md:text-base 2xl:text-lg">
           <Link href="#" className="hover:text-primary">
             Support
           </Link>
@@ -77,6 +76,7 @@ const Header = () => {
           </Link>
         </div>
 
+        {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="flex md:hidden text-black focus:outline-none justify-end text-end"
@@ -98,6 +98,7 @@ const Header = () => {
         </button>
       </nav>
 
+      {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-white text-black shadow-lg rounded-xl mt-2 px-4 py-2">
           <Link href="#features" className="block py-2 hover:text-primary">

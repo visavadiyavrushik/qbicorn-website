@@ -24,11 +24,11 @@ const HomeContact = () => {
   };
 
   return (
-    <section className="mt-[100px] lg:mt-[200px] px-4">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>
-            <div className="mb-[35px] md:mb-[75px]">
+    <section className="mt-[100px] lg:mt-[200px] ">
+      <div className="container mx-auto px-5  xl:px-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center h-full">
+          <div className="h-full">
+            <div className="mb-[35px]  2xl:mb-[75px]">
               <div className="bg-[#131313] max-w-[200px] rounded-[130px] border border-[#FFF] mb-7 px-5 py-3 flex items-center justify-center text-[18px] sm:text-[20px]">
                 <Image
                   src="/assets/svg/phone.svg"
@@ -39,8 +39,10 @@ const HomeContact = () => {
                 />
                 <p>Contact Us</p>
               </div>
-              <h2 className="text-[43px] font-medium">Get in Touch with Us</h2>
-              <p className="text-[#606060] text-[20px] mt-4">
+              <h2 className=" text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[43px] font-medium">
+                Get in Touch with Us
+              </h2>
+              <p className="text-[#606060] text-[20px] mt-3 2xl:mt-4">
                 Do you have a question? Contact us directly
               </p>
             </div>
@@ -62,13 +64,14 @@ const HomeContact = () => {
               iconSrc="/assets/svg/location.svg"
               title="Locations"
               description="Get Directions"
+              classname="mb-0"
               onClick={() => {}}
             />
           </div>
 
           {/* Right Section */}
-          <div>
-            <div className="bg-[#191919] p-8 sm:p-12 rounded-3xl">
+          <div className="h-full">
+            <div className="bg-[#191919] p-8 2xl:p-12 rounded-3xl h-full">
               <div className="mb-6">
                 <h4 className="text-[21px] font-medium">Send Us a Message</h4>
                 <p className="text-[18px] sm:text-[20px] font-normal text-[#666]">

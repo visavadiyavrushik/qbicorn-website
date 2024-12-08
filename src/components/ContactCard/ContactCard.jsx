@@ -1,9 +1,9 @@
 import Image from 'next/image';
 
-const ContactCard = ({ iconSrc, title, description, onClick }) => {
+const ContactCard = ({ iconSrc, title, description, onClick, classname }) => {
   return (
     <div
-      className="bg-[#191919] p-4 rounded-[19px] mb-3 cursor-pointer hover:bg-[#212121] transition-colors"
+      className={`bg-[#191919] p-4 rounded-[19px] mb-3 cursor-pointer hover:bg-[#212121] transition-colors ${classname}`}
       onClick={onClick}
     >
       <div className="flex items-center justify-between">

@@ -19,21 +19,21 @@ export default function HomeHero() {
       >
         <div className="container mx-auto px-4">
           {/* Hero Section */}
-          <div className="flex flex-col justify-center items-center relative">
-            {/* Hero Image */}
-            <Image
-              src="/assets/images/mobileAndpc.png"
+          {/* <div className="flex flex-col justify-center items-center relative"> */}
+          {/* Hero Image */}
+          {/* <Image
+              src="/assets/images/homemain.png"
               alt="Hero Image"
               width={440}
               height={336}
               className="relative z-10 w-full max-w-[280px] sm:max-w-[440px]"
-            />
-            {/* Background Decoration */}
-            <div className="bg-white rounded-lg h-10 md:h-[80px] w-full max-w-[280px] sm:max-w-[500px] absolute z-0 bottom-[15px]"></div>
-          </div>
+            /> */}
+          {/* Background Decoration */}
+          {/* <div className="bg-white rounded-lg h-10 md:h-[80px] w-full max-w-[280px] sm:max-w-[500px] absolute z-0 bottom-[15px]"></div> */}
+          {/* </div> */}
 
           {/* Join Members Section */}
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-between md:border border-[#fff] px-4 sm:px-6 py-2 rounded-full max-w-[400px] sm:max-w-[500px] mx-auto text-white">
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-between md:border border-[#fff] px-4 sm:px-6 py-2 rounded-full max-w-[300px] sm:max-w-[500px] mx-auto text-white">
             {/* Avatars */}
             <div className="flex items-center justify-center sm:mr-4">
               <Image
@@ -56,12 +56,12 @@ export default function HomeHero() {
 
           {/* Hero Text */}
           <div className="text-center mt-8  px-4">
-            <p className="text-xl sm:text-2xl font-normal font-instrument">
+            <p className="text-base sm:text-xl xl:text-2xl font-normal font-instrument">
               Qbicron turns meetings and discussions into organized, actionable
               insights in real time.
             </p>
 
-            <h1 className="text-[32px] lg:text-[60px]">
+            <h1 className="text-[32px] sm:text-[36px] md:text-[40px] lg:text-[45px] xl:text-[50px] 2xl:text-[60px]">
               Automatically capture meeting notes, action items, and transcripts
               with AI
             </h1>
@@ -85,6 +85,13 @@ export default function HomeHero() {
               Learn More
             </button>
           </div>
+          <Image
+            src="/assets/images/heroimg.svg"
+            alt="Hero Image"
+            width={1446}
+            height={700}
+            className=" z-10 w-full object-contain"
+          />
         </div>
       </div>
     </section>

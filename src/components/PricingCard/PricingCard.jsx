@@ -16,7 +16,7 @@ const PricingCard = ({
 }) => {
   return (
     <div
-      className="p-10 rounded-[26px] relative border border-[#1B2028] mt-5 md:mt-0"
+      className="p-8 2xl:p-10 rounded-[26px] relative border border-[#1B2028] mt-5 md:mt-0"
       style={{
         background: bgColor,
         backdropFilter: 'blur(125px)',
@@ -30,19 +30,19 @@ const PricingCard = ({
 
       <div className="flex justify-between items-center">
         <Image src={iconSrc} alt="icon" width={66} height={66} />
-        <p className="text-[34px] font-semibold text-[#D9D9D9]">
+        <p className="text-xl lg:text-3xl 2xl:text-[34px] font-semibold text-[#D9D9D9]">
           {price}
-          <span className="text-[18px] font-normal text-[#666] ml-1 mb-1">
+          <span className="text-base lg:text-lg 2xl:text-lg font-normal text-[#666] ml-1 mb-1">
             / Per month
           </span>
         </p>
       </div>
 
       <div className="flex items-center mt-[27px]">
-        <p className="mr-1 text-xl md:text-2xl">{title}</p>
+        <p className="mr-1 text-lg lg:text-xl 2xl:text-2xl">{title}</p>
         {tagText && (
           <div
-            className="px-[10px] py-1 rounded-[10px]"
+            className="px-[10px] py-1 rounded-[10px] text-sm "
             style={{ backgroundColor: tagBgColor, color: tagTextColor }}
           >
             ({tagText})
@@ -50,13 +50,13 @@ const PricingCard = ({
         )}
       </div>
 
-      <p className="mt-[31px] mb-[50px] text-[#666] text-[16px] md:text-[21px]">
+      <p className="mt-4 lg:my-6 2xl:mt-[31px] 2xl:mb-[50px] text-[#666] text-[16px] md:text-[21px]">
         {features.description}
       </p>
 
       <div>
         <button
-          className="flex items-center text-center justify-center text-[16px] md:text-[21px] w-full p-[18px] rounded-xl"
+          className="flex items-center text-center justify-center text-sm 2xl:text-base  md:text-[21px] w-full p-3 xl:p-4 2xl:p-[18px] rounded-xl"
           style={{ backgroundColor: buttonColor }}
         >
           {buttonText}
@@ -71,14 +71,14 @@ const PricingCard = ({
       </div>
 
       <div>
-        <h3 className="mt-[30px] mb-[18px] text-[21px] font-medium">
+        <h3 className="2xl:mt-[30px] 2xl:mb-[18px] 2xl:text-[21px] lg:text-lg lg:mb-4 lg:mt-6 text-base mb-2 mt-4  font-medium">
           Features Included:
         </h3>
         <ul>
           {features.items.map((feature, index) => (
             <li
               key={index}
-              className="flex items-center font-normal text-[16px] md:text-[21px] py-4 border-b-2 border-[#212122]"
+              className="flex items-center font-normal text-sm md:text-base xl:text-lg 2xl:text-[21px] py-3 2xl:py-4 border-b-2 border-[#212122]"
             >
               <Image
                 src="/assets/svg/right-bg-blue.svg"
@@ -95,7 +95,7 @@ const PricingCard = ({
 
       {svgBgSrc && (
         <div
-          className="absolute hidden md:block  md:bottom-[-50px] md:right-[-50px] "
+          className="absolute hidden lg:block  md:bottom-[-50px] md:right-[-50px] "
           style={{
             backgroundImage: `url(${svgBgSrc})`,
             backgroundSize: 'cover',
